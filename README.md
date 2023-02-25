@@ -18,3 +18,5 @@
 2，红包总额=红包总额 - 红包金额  
 3，最后一个红包=最后剩余金额  
 4，注意要控制下单次红包的金额，不要太高也不要太低  
+
+![1677334182320](C:\Users\shinelon\AppData\Roaming\Typora\typora-user-images\1677334182320.png)
