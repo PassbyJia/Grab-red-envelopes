@@ -1,5 +1,6 @@
 package com.leibin.qhb;
 
+import java.util.Random;
 import java.util.concurrent.CountDownLatch;
 
 public class GrabRedEnvelopes implements Runnable {
@@ -16,12 +17,14 @@ public class GrabRedEnvelopes implements Runnable {
     private CountDownLatch countDownLatch;
     //锁
     private Object lock = new Object();
+    //生成随机金额
+    Random random = new Random();
 
     public GrabRedEnvelopes(int redEnvelope, int redEnvelopeNum, CountDownLatch countDownLatch) {
         this.redEnvelope = redEnvelope;
         this.redEnvelopeNum = redEnvelopeNum;
-        this.redEnvelopeSize = redEnvelope/redEnvelopeNum;
-        this.laseRedEnvelopeSize = redEnvelope-(redEnvelopeSize)*(redEnvelopeNum-1);
+//        this.redEnvelopeSize = random.nextInt((redEnvelope-1)-1+1)+1;
+//        this.laseRedEnvelopeSize = redEnvelope-(redEnvelopeSize)*(redEnvelopeNum-1);
         this.countDownLatch = countDownLatch;
     }
 
@@ -35,11 +38,18 @@ public class GrabRedEnvelopes implements Runnable {
         }
         synchronized (lock){//上锁，保证线程安全
             if(redEnvelopeNum>0){
-                if (redEnvelopeNum==1){
-                    redEnvelopeSize = laseRedEnvelopeSize;
+                //生成随机红包金额
+                redEnvelopeSize = random.nextInt((redEnvelope-1)-1+1)+1;
+                while (redEnvelope-redEnvelopeSize<=1||redEnvelopeSize>redEnvelope*0.6){//避免出现红包金额过小过大,重新生成
+                    redEnvelopeSize = random.nextInt((redEnvelope-1)-1+1)+1;
+                }
+
+                if (redEnvelopeNum==1){//表示到了最后一个红包，之间全部给他即可
+                    redEnvelopeSize = redEnvelope;
                 }
                 System.out.println(Thread.currentThread().getName()+":哈哈哈，我抢到了"+redEnvelopeSize+"分,今晚吃鸡！！！");
                 redEnvelopeNum--;
+                redEnvelope -= redEnvelopeSize;
             }else{
                 System.out.println(Thread.currentThread().getName()+":呜呜呜，我没抢到，感觉亏了一个亿。。。");
             }

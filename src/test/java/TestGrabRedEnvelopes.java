@@ -20,7 +20,6 @@ public class TestGrabRedEnvelopes {
         for(int i = 0; i < n;i++){
             new Thread(grabRedEnvelopes).start();
         }
-        //全部线程创建完毕，开始唤醒
         countDownLatch.countDown();
 
     }
