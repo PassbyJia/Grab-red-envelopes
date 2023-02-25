@@ -26,24 +26,24 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="34" />
+          <entry key="java" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="34" />
+          <entry key="JAVA" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
-          <entry key="java" value="2526" />
+          <entry key="java" value="3290" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2526" />
+          <entry key="JAVA" value="3290" />
           <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
@@ -51,33 +51,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/leibin/reentrantLock/Ticket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/leibin/countdownlatch/Sence1.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/leibin/qhb/GrabRedEnvelopes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-              <folding>
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="268">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestSence1.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestGrabRedEnvelopes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="660">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,6 +90,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -125,6 +115,8 @@
         <option value="$PROJECT_DIR$/src/test/java/TestReentrantLock.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestSence1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leibin/countdownlatch/Sence1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestGrabRedEnvelopes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leibin/qhb/GrabRedEnvelopes.java" />
       </list>
     </option>
   </component>
@@ -148,6 +140,9 @@
     <option name="y" value="-25" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -281,7 +276,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1677328678713" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1677331655703" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -306,9 +301,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestSence1">
+  <component name="RunManager" selected="Application.TestGrabRedEnvelopes">
     <configuration name="TestCallableThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestCallableThread" />
+      <module name="QHB" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGrabRedEnvelopes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestGrabRedEnvelopes" />
       <module name="QHB" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -335,27 +337,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestThreadPriority" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestThreadPriority" />
-      <module name="QHB" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.TestThreadPriority" />
       <item itemvalue="Application.TestSynchronizedLock" />
       <item itemvalue="Application.TestReentrantLock" />
       <item itemvalue="Application.TestCallableThread" />
       <item itemvalue="Application.TestSence1" />
+      <item itemvalue="Application.TestGrabRedEnvelopes" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestGrabRedEnvelopes" />
         <item itemvalue="Application.TestSence1" />
         <item itemvalue="Application.TestReentrantLock" />
         <item itemvalue="Application.TestSynchronizedLock" />
         <item itemvalue="Application.TestCallableThread" />
-        <item itemvalue="Application.TestThreadPriority" />
       </list>
     </recent_temporary>
   </component>
@@ -373,12 +368,12 @@
       <workItem from="1677312339078" duration="1264000" />
       <workItem from="1677313655069" duration="254000" />
       <workItem from="1677314400310" duration="213000" />
-      <workItem from="1677314903844" duration="2353000" />
+      <workItem from="1677314903844" duration="4533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17688000" />
+    <option name="totallyTimeSpent" value="19868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -397,7 +392,7 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.33569404" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.33617023" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39943343" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -569,6 +564,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leibin/countdownlatch/Sence1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding>
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestSence1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -579,14 +585,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leibin/countdownlatch/Sence1.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestGrabRedEnvelopes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        <state relative-caret-position="660">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding>
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leibin/qhb/GrabRedEnvelopes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
